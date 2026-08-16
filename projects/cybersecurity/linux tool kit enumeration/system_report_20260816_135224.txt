@@ -1,0 +1,115 @@
+====================================================
+     ADMINISTRATIVE DASHBOARD DIAGNOSTIC REPORT    
+     Generated On: Sun Aug 16 13:52:24 UTC 2026
+====================================================
+
+[+] SYSTEM INFORMATION
+----------------------------------------------------
+  Hostname           : LAPTOP-LRE06JA2
+  Current User       : sonu
+  System Uptime      : up 2 minutes
+  Kernel Release     : 6.18.33.2-microsoft-standard-WSL2
+----------------------------------------------------
+
+[+] OS & KERNEL OVERVIEW
+----------------------------------------------------
+  OS Release         : Ubuntu 26.04 LTS
+  Kernel Architecture : Linux (x86_64)
+----------------------------------------------------
+
+[+] USERS & GROUPS METRICS
+----------------------------------------------------
+  Active User Sessions   : 0
+  Registered Accounts    : 27
+  Configured Groups      : 58
+----------------------------------------------------
+Logged-in Session Details:
+
+[+] PROCESS DIAGNOSTICS
+----------------------------------------------------
+  Total Active Processes : 30
+----------------------------------------------------
+Top 5 Resource-Consuming Processes (by CPU):
+
+    PID    PPID CMD                         %MEM %CPU
+      1       0 /sbin/init                   0.1  0.3
+    176       1 /usr/bin/python3 /usr/bin/n  0.3  0.1
+    231       1 /usr/bin/python3 /usr/share  0.4  0.1
+     90       1 /usr/lib/systemd/systemd-ud  0.1  0.1
+     48       1 /usr/lib/systemd/systemd-jo  0.2  0.1
+
+[+] NETWORK STATUS
+----------------------------------------------------
+  Local IP Address     : 172.20.136.56
+  External IP Address  : 116.193.128.143
+----------------------------------------------------
+Active Interface Summary:
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+eth0             UP             00:15:5d:10:65:7f <BROADCAST,MULTICAST,UP,LOWER_UP> 
+
+[+] STORAGE INFORMATION
+----------------------------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+total           1.7T  363G  1.3T  22% -
+----------------------------------------------------
+Detailed Mount Point Layout:
+
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.8G     0  3.8G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none            3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers         200G  173G   27G  87% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.4G  954G   1% /
+none            3.8G   32K  3.8G   1% /mnt/wslg
+none            3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs          3.8G  2.8M  3.8G   1% /init
+none            3.8G  528K  3.8G   1% /run
+none            3.8G     0  3.8G   0% /run/lock
+none            3.8G     0  3.8G   0% /run/shm
+none            3.8G   80K  3.8G   1% /mnt/wslg/versions.txt
+none            3.8G   80K  3.8G   1% /mnt/wslg/doc
+C:\             200G  173G   27G  87% /mnt/c
+D:\             138G   14G  125G  10% /mnt/d
+E:\             138G  2.1G  136G   2% /mnt/e
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           3.8G  4.0K  3.8G   1% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           777M   12K  777M   1% /run/user/1000
+
+[+] SECURITY & PERMISSIONS AUDIT
+----------------------------------------------------
+World-Writable Files in /tmp (Sample):
+
+SUID Binary Sample (/usr/bin):
+  - /usr/bin/su
+  - /usr/bin/mount
+  - /usr/bin/passwd
+  - /usr/bin/chsh
+  - /usr/bin/chfn
+----------------------------------------------------
+
+[+] ACTIVE SERVICES STATUS
+----------------------------------------------------
+Top Running Systemd Services:
+
+  UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+  chrony.service              loaded active running chrony, an NTP client/server
+  cron.service                loaded active running Regular background program processing daemon
+  dbus.service                loaded active running D-Bus System Message Bus
+  getty@tty1.service          loaded active running Getty on tty1
+  networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd
+  rsyslog.service             loaded active running System Logging Service
+  systemd-journald.service    loaded active running Journal Service
+  systemd-logind.service      loaded active running User Login Management
+  systemd-resolved.service    loaded active running Network Name Resolution
+  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+----------------------------------------------------
+
+[+] CRITICAL FILES AUDIT
+----------------------------------------------------
+  /etc/passwd            : Readable
+  /etc/shadow            : Access Denied (Permission Required)
+  /etc/fstab             : Readable
+  /var/log/syslog        : Readable
+----------------------------------------------------
